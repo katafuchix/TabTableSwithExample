@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKjpSub-Bold.otf">
+            <string>NotoSansCJKjpSub-Bold</string>
+        </array>
+        <array key="NotoSansCJKjpSub-Regular.otf">
+            <string>NotoSansCJKjpSub-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaidMemberItemCell" id="KGk-i7-Jjw" customClass="PaidMemberItemCell" customModule="mitsumitsu_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95H-wg-wb3">
+                        <rect key="frame" x="24" y="24" width="276" height="108"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQw-1t-eDg">
+                                <rect key="frame" x="0.0" y="0.0" width="96.5" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZG-Pv-nad">
+                                        <rect key="frame" x="14" y="23" width="37" height="46"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Bold" family="NotoSansCJKjpSub-Bold" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ヶ月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIU-yO-I1e">
+                                        <rect key="frame" x="53" y="37" width="36" height="27"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Bold" family="NotoSansCJKjpSub-Bold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hau-BF-Nht">
+                                        <rect key="frame" x="21.5" y="66" width="54" height="27"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Bold" family="NotoSansCJKjpSub-Bold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="paidmember_cell_background"/>
+                                <constraints>
+                                    <constraint firstItem="FZG-Pv-nad" firstAttribute="centerY" secondItem="QQw-1t-eDg" secondAttribute="centerY" constant="-8" id="0ma-UC-Jt4"/>
+                                    <constraint firstItem="jIU-yO-I1e" firstAttribute="bottom" secondItem="FZG-Pv-nad" secondAttribute="bottom" constant="-5" id="9bg-F6-jRf"/>
+                                    <constraint firstItem="FZG-Pv-nad" firstAttribute="leading" secondItem="QQw-1t-eDg" secondAttribute="leading" constant="14" id="Jk7-r5-SVg"/>
+                                    <constraint firstItem="hau-BF-Nht" firstAttribute="top" secondItem="jIU-yO-I1e" secondAttribute="bottom" constant="2" id="LVJ-ux-ZX7"/>
+                                    <constraint firstItem="jIU-yO-I1e" firstAttribute="leading" secondItem="FZG-Pv-nad" secondAttribute="trailing" constant="2" id="Owv-f9-RCK"/>
+                                    <constraint firstItem="hau-BF-Nht" firstAttribute="centerX" secondItem="QQw-1t-eDg" secondAttribute="centerX" id="oxE-ao-FoD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxs-NQ-fxE">
+                                <rect key="frame" x="100.5" y="0.0" width="175.5" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqi-8Y-X6H">
+                                        <rect key="frame" x="4" y="3" width="84" height="46"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Bold" family="NotoSansCJKjpSub-Bold" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" / 月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9L-nB-xgN">
+                                        <rect key="frame" x="89" y="18" width="33.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Bold" family="NotoSansCJKjpSub-Bold" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（税込）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyq-if-EDv">
+                                        <rect key="frame" x="124.5" y="27" width="48" height="18"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Bold" family="NotoSansCJKjpSub-Bold" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（一括支払い：34,800円）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uP-vs-Wyv">
+                                        <rect key="frame" x="3.5" y="44" width="169" height="21"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Regular" family="NotoSansCJKjpSub-Regular" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTx-zo-HpH">
+                                        <rect key="frame" x="26.5" y="73" width="122.5" height="24"/>
+                                        <color key="backgroundColor" name="main"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="fdW-aj-7ta"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Regular" family="NotoSansCJKjpSub-Regular" pointSize="14"/>
+                                        <state key="normal" title="登録する">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="paidmember_cell_background"/>
+                                <constraints>
+                                    <constraint firstItem="hyq-if-EDv" firstAttribute="bottom" secondItem="x9L-nB-xgN" secondAttribute="bottom" id="6hc-h0-QAZ"/>
+                                    <constraint firstItem="x9L-nB-xgN" firstAttribute="leading" secondItem="Bqi-8Y-X6H" secondAttribute="trailing" constant="1" id="ETy-Ju-Px3"/>
+                                    <constraint firstItem="BTx-zo-HpH" firstAttribute="width" secondItem="Dxs-NQ-fxE" secondAttribute="width" multiplier="0.7" id="F2d-BX-Kq1"/>
+                                    <constraint firstItem="BTx-zo-HpH" firstAttribute="centerX" secondItem="Dxs-NQ-fxE" secondAttribute="centerX" id="HJN-S6-8r1"/>
+                                    <constraint firstItem="7uP-vs-Wyv" firstAttribute="trailing" secondItem="hyq-if-EDv" secondAttribute="trailing" id="UXe-Cj-pzm"/>
+                                    <constraint firstAttribute="bottom" secondItem="BTx-zo-HpH" secondAttribute="bottom" constant="11" id="ZaX-LF-Nvi"/>
+                                    <constraint firstItem="Bqi-8Y-X6H" firstAttribute="trailing" secondItem="Dxs-NQ-fxE" secondAttribute="centerX" id="a3o-L7-qfg"/>
+                                    <constraint firstItem="x9L-nB-xgN" firstAttribute="bottom" secondItem="Bqi-8Y-X6H" secondAttribute="bottom" constant="-4" id="dMY-7v-aYK"/>
+                                    <constraint firstItem="hyq-if-EDv" firstAttribute="leading" secondItem="x9L-nB-xgN" secondAttribute="trailing" constant="2" id="gEO-D3-pUX"/>
+                                    <constraint firstItem="7uP-vs-Wyv" firstAttribute="top" secondItem="x9L-nB-xgN" secondAttribute="bottom" constant="-1" id="iUi-Al-BFA"/>
+                                    <constraint firstItem="Bqi-8Y-X6H" firstAttribute="bottom" secondItem="Dxs-NQ-fxE" secondAttribute="centerY" constant="-5" id="obW-qw-od8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QQw-1t-eDg" firstAttribute="top" secondItem="95H-wg-wb3" secondAttribute="top" id="13r-Oa-yOz"/>
+                            <constraint firstItem="QQw-1t-eDg" firstAttribute="leading" secondItem="95H-wg-wb3" secondAttribute="leading" id="6FQ-JQ-SbL"/>
+                            <constraint firstItem="QQw-1t-eDg" firstAttribute="width" secondItem="95H-wg-wb3" secondAttribute="width" multiplier="0.35" id="6PX-Dr-9H5"/>
+                            <constraint firstItem="Dxs-NQ-fxE" firstAttribute="top" secondItem="95H-wg-wb3" secondAttribute="top" id="G2a-EI-SxI"/>
+                            <constraint firstAttribute="bottom" secondItem="QQw-1t-eDg" secondAttribute="bottom" id="Usr-AS-6I6"/>
+                            <constraint firstAttribute="trailing" secondItem="Dxs-NQ-fxE" secondAttribute="trailing" id="cjp-lg-UGi"/>
+                            <constraint firstAttribute="bottom" secondItem="Dxs-NQ-fxE" secondAttribute="bottom" id="kho-Z0-Kl9"/>
+                            <constraint firstItem="Dxs-NQ-fxE" firstAttribute="leading" secondItem="QQw-1t-eDg" secondAttribute="trailing" constant="4" id="pNS-uE-xNu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="za3-Hk-vnT">
+                        <rect key="frame" x="18" y="10" width="96.5" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一番お得！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmh-mw-Um8">
+                                <rect key="frame" x="0.0" y="5" width="96.5" height="24"/>
+                                <fontDescription key="fontDescription" name="NotoSansCJKjpSub-Bold" family="NotoSansCJKjpSub-Bold" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="main"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="8MR-fa-yXJ"/>
+                            <constraint firstItem="Rmh-mw-Um8" firstAttribute="centerY" secondItem="za3-Hk-vnT" secondAttribute="centerY" id="KpR-5O-yQq"/>
+                            <constraint firstItem="Rmh-mw-Um8" firstAttribute="centerX" secondItem="za3-Hk-vnT" secondAttribute="centerX" id="kmL-7b-Qa5"/>
+                            <constraint firstItem="Rmh-mw-Um8" firstAttribute="width" secondItem="za3-Hk-vnT" secondAttribute="width" id="nfJ-Xq-lYP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="95H-wg-wb3" secondAttribute="bottom" constant="18" id="ICk-yB-8xr"/>
+                    <constraint firstItem="za3-Hk-vnT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KoB-FJ-elo"/>
+                    <constraint firstAttribute="trailing" secondItem="95H-wg-wb3" secondAttribute="trailing" constant="20" id="L3C-vs-RQx"/>
+                    <constraint firstItem="95H-wg-wb3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Raq-Un-Uam"/>
+                    <constraint firstItem="za3-Hk-vnT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="hMk-S9-X1G"/>
+                    <constraint firstItem="za3-Hk-vnT" firstAttribute="width" secondItem="QQw-1t-eDg" secondAttribute="width" id="lbN-LQ-H20"/>
+                    <constraint firstItem="95H-wg-wb3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="weR-St-1Wv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="copyLabel" destination="Rmh-mw-Um8" id="VPY-B0-3pG"/>
+                <outlet property="monthLabel" destination="FZG-Pv-nad" id="a7U-KS-VSw"/>
+                <outlet property="priceLabel" destination="Bqi-8Y-X6H" id="wGV-nq-bsX"/>
+                <outlet property="priceTextLabel" destination="7uP-vs-Wyv" id="eDH-YF-FCL"/>
+                <outlet property="registButton" destination="BTx-zo-HpH" id="pWU-kY-W5x"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="61.607142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="main">
+            <color red="1" green="0.77647058823529413" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="paidmember_cell_background">
+            <color red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
