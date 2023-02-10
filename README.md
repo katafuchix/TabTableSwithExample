@@ -1,4 +1,4 @@
-# TabTableSwithExample
+# TabTableSwitchExample
 
 <div>
 <img src="https://user-images.githubusercontent.com/6063541/213899641-8d02be85-148a-483f-9491-8e24120b70df.png" width="250">
